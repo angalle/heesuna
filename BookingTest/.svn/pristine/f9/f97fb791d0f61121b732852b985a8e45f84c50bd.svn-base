@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sm.bookingtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+ 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	 
+	<permission
+	    android:name="com.sm.bookingtest.permission.C2D_MESSAGE"
+	    android:protectionLevel="signature" />
+	 
+	<uses-permission android:name="com.sm.bookingtest.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+        <activity
+            android:name="com.sm.bookingtest.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.util.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.sell.SellFragment"
+            android:label="@string/sale" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.purchase.PurchaseFragment"
+            android:label="@string/purcahse" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.RegisterFragmentSell"
+            android:label="@string/register" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.mypagepurchase.MyPageFragment"
+            android:label="@string/myPage" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.sell.SellItemClickActivity"
+            android:label="@string/title_activity_sale_item_click" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.purchase.PurchaseItemClickActivity"
+            android:label="@string/title_activity_purchase_item_click" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.register.RegisterFragmentSell"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/register_fragment_sell" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.register.RegisterFragmentPurchase"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/register_fragment_purchase" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.Login"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.Join"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.mypagepurchase.MyPagePurchaseListFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.mypagesell.MyPageSellListFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.mypagepurchase.MyPagePurchaseItemClickActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.sm.bookingtest.mypagesell.MyPageSellItemClickActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <receiver
+	        android:name="com.sm.bookingtest.GcmBroadcastReceiver"
+	        android:permission="com.google.android.c2dm.permission.SEND" >
+	        <intent-filter>
+	            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+	            <category android:name="com.sm.bookingtest" />
+	        </intent-filter>
+	    </receiver>
+	    
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    </application>
+	
+</manifest>

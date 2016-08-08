@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click_sale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3DBB0"
+    android:padding="30dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/im_url1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/beehive" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TITLE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="PRICE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="COST"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="STATE"
+        android:textSize="20sp" />
+
+      <Button
+        android:id="@+id/btn_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right"
+        android:background="@drawable/book_btn"
+        android:text="구매하기"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

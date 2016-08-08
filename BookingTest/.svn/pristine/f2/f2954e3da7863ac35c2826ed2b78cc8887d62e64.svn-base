@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/ic_launcher"
+        android:title="로그아웃" />
+     <item
+        android:id="@+id/PH_Modification"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_launcher"
+        android:title="전화전호 수정" />
+</menu>
