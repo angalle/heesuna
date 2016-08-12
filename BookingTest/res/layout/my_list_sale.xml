@@ -82,7 +82,7 @@
                 android:adjustViewBounds="true"
                 android:layout_alignLeft="@+id/tv_sale_condition"
                 android:layout_alignParentTop="true"
-                android:src="@drawable/a" />
+                android:src="@drawable/grade_a" />
 
         </RelativeLayout>
 

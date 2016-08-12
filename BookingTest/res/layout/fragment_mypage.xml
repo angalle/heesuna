@@ -51,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="@drawable/btn"
         android:text="구매리스트"
         android:textSize="16sp" />
 
@@ -59,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:background="@drawable/btn"
         android:text="판매리스트"
         android:textSize="16sp" />
 

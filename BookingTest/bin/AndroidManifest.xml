@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sm.bookingtest"
+    package="com.sm.bookingtest"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,81 +22,93 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 	 
 	<permission
-	    android:name="sm.bookingtest.permission.C2D_MESSAGE"
+	    android:name="com.sm.bookingtest.permission.C2D_MESSAGE"
 	    android:protectionLevel="signature" />
 	 
-	<uses-permission android:name="sm.bookingtest.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.sm.bookingtest.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme">
         <activity
-            android:name="sm.bookingtest.MainActivity"
+            android:name="com.sm.bookingtest.MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="sm.bookingtest.util.SplashActivity"           android:theme="@android:style/Theme.NoTitleBar" >
+            android:name="com.sm.bookingtest.util.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="sm.bookingtest.sell.SellFragment"           android:label="@string/sale" >
+            android:name="com.sm.bookingtest.sell.SellFragment"
+            android:label="@string/sale" >
         </activity>
         <activity
-            android:name="sm.bookingtest.purchase.PurchaseFragment"           android:label="@string/purcahse" >
+            android:name="com.sm.bookingtest.purchase.PurchaseFragment"
+            android:label="@string/purcahse" >
         </activity>
         <activity
-            android:name="sm.bookingtest.RegisterFragmentSell"
+            android:name="com.sm.bookingtest.RegisterFragmentSell"
             android:label="@string/register" >
         </activity>
         <activity
-            android:name="sm.bookingtest.mypagepurchase.MyPageFragment"       android:label="@string/myPage" >
+            android:name="com.sm.bookingtest.mypagepurchase.MyPageFragment"
+            android:label="@string/myPage" >
         </activity>
         <activity
-            android:name="sm.bookingtest.sell.SellItemClickActivity" android:label="@string/title_activity_sale_item_click" >
+            android:name="com.sm.bookingtest.sell.SellItemClickActivity"
+            android:label="@string/title_activity_sale_item_click" >
         </activity>
         <activity
-            android:name="sm.bookingtest.purchase.PurchaseItemClickActivity"   android:label="@string/title_activity_purchase_item_click" >
+            android:name="com.sm.bookingtest.purchase.PurchaseItemClickActivity"
+            android:label="@string/title_activity_purchase_item_click" >
         </activity>
         <activity
-            android:name="sm.bookingtest.register.RegisterFragmentSell" android:windowSoftInputMode="stateHidden|adjustResize"
+            android:name="com.sm.bookingtest.register.RegisterFragmentSell"
+            android:windowSoftInputMode="stateHidden|adjustResize"
             android:label="@string/register_fragment_sell" >
         </activity>
         <activity
-            android:name="sm.bookingtest.register.RegisterFragmentPurchase" android:windowSoftInputMode="stateHidden|adjustResize"
+            android:name="com.sm.bookingtest.register.RegisterFragmentPurchase"
+            android:windowSoftInputMode="stateHidden|adjustResize"
             android:label="@string/register_fragment_purchase" >
         </activity>
         <activity
-            android:name="sm.bookingtest.Login"
+            android:name="com.sm.bookingtest.Login"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="sm.bookingtest.Join"
+            android:name="com.sm.bookingtest.Join"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="sm.bookingtest.mypagepurchase.MyPagePurchaseListFragment" android:label="@string/app_name" >
+            android:name="com.sm.bookingtest.mypagepurchase.MyPagePurchaseListFragment"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="sm.bookingtest.mypagsell.MyPageSellListFragment" android:label="@string/app_name" >
+            android:name="com.sm.bookingtest.mypagesell.MyPageSellListFragment"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="sm.bookingtest.mypagepurchase.MyPagePurchaseItemClickActivity" android:label="@string/app_name" >
+            android:name="com.sm.bookingtest.mypagepurchase.MyPagePurchaseItemClickActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="sm.bookingtest..mypagesell.MyPageSellItemClickActivity" android:label="@string/app_name" >
+            android:name="com.sm.bookingtest.mypagesell.MyPageSellItemClickActivity"
+            android:label="@string/app_name" >
         </activity>
         
         <receiver
-	        android:name="sm.bookingtest.GcmBroadcastReceiver"
+	        android:name="com.sm.bookingtest.GcmBroadcastReceiver"
 	        android:permission="com.google.android.c2dm.permission.SEND" >
 	        <intent-filter>
 	            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-	            <category android:name="sm.bookingtest" />
+	            <category android:name="com.sm.bookingtest" />
 	        </intent-filter>
 	    </receiver>
 	    

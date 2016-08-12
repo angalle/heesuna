@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:visibility="gone"
-                android:src="@drawable/aplus" />
+                android:src="@drawable/grade_aplus" />
 
             <ImageView
                 android:id="@+id/state_img"
@@ -48,7 +48,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:adjustViewBounds="true"
-                android:src="@drawable/aplus" />
+                android:src="@drawable/grade_aplus" />
 
         </RelativeLayout>
 

@@ -3,104 +3,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#FFFFFF"
+    android:background="#DEC55C"
     android:orientation="horizontal" >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/iv_sale_bookimage"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
         android:layout_weight="3"
-        android:padding="10dp"
-        android:background="@drawable/list_box"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:maxWidth="80dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:src="@drawable/beehive" />
 
-        <ImageView
-            android:id="@+id/iv_sale_bookimage"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:layout_weight="3"
-            android:adjustViewBounds="true"
-            android:maxHeight="100dp"
-            android:maxWidth="80dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/beehive" />
+    <LinearLayout
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sale_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="155dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="horizontal" >
 
             <TextView
-                android:id="@+id/tv_sale_title"
+                android:id="@+id/tv_sale_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Title"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textStyle="bold" />
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Price" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/tv_sale_cost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:id="@+id/tv_sale_price"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="3dp"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="Price" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="/" />
-
-                <TextView
-                    android:id="@+id/tv_sale_cost"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="Cost" />
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/tv_sale_condition"
-                    android:layout_width="113dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:gravity="center"
-                    android:text="Condition" />
-
-                <ImageView
-                    android:id="@+id/status_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/tv_sale_condition"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/a" />
-            </RelativeLayout>
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Cost" />
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btn_sale_salebtn"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:src="@drawable/search" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_sale_condition"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Condition" />
+
+            <ImageView
+                android:id="@+id/status_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_alignLeft="@+id/tv_sale_condition"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/grade_a" />
+
+        </RelativeLayout>
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_sale_salebtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/search"
+        android:background="#FFFFFF" />
 
 </LinearLayout>

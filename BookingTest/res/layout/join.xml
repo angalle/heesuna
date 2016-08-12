@@ -2,89 +2,178 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3DBB0"
+    android:background="#1d60ae"
     android:orientation="vertical" >
+    
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:src="@drawable/notice" />
 
     <ImageView
-        android:id="@+id/book_logo"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/booking_under_line_logo" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/join_title_sign_up" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
         android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/signup_id"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="15"
-            android:hint="ID(최대15자)"
-            android:inputType="textPersonName"
-            android:maxLength="15"
-            android:singleLine="true"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/signup_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="15"
-            android:hint="PW(최대15자)"
-            android:inputType="textPassword"
-            android:maxLength="15"
-            android:singleLine="true"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/signup_password_checking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="15"
-            android:hint="PW확인"
-            android:inputType="textPassword"
-            android:maxLength="15"
-            android:singleLine="true"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/signup_ph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:ems="15"
-            android:hint="PH"
-            android:inputType="numberSigned"
-            android:maxLength="15"
-            android:singleLine="true"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/signup_btn"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/book_btn"
-            android:layout_gravity="right"
-            android:text="가입" />
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/join_textfield"
+                android:gravity="center"
+                android:text="아이디"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/signup_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:background="@drawable/normal_box"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="100dp"
+				android:layout_height="50dp"
+                android:background="@drawable/join_textfield"
+                android:gravity="center"
+                android:text="비밀번호"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:background="@drawable/normal_box"
+                android:padding="10dp" >
+
+                <requestFocus android:layout_width="wrap_content" />
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/join_textfield"
+                android:gravity="center"
+                android:text="비밀번호확인"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/signup_password_checking"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:background="@drawable/normal_box"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/join_textfield"
+                android:gravity="center"
+                android:text="전화번호"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/signup_ph"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/normal_box"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/join_no_btn" />
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/join_ok_btn" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
