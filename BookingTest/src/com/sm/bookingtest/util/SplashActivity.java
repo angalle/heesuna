@@ -17,6 +17,9 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.sm.bookingtest.Login;
 import com.sm.bookingtest.MainActivity;
 import com.sm.bookingtest.R;
